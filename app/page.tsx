@@ -1,4 +1,4 @@
-import { Card, Flex, Grid, Text } from "@radix-ui/themes";
+import { Button, Card, Flex, Grid, Text } from "@radix-ui/themes";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,12 +6,9 @@ export default function Home() {
     <Grid columns={{ initial: "1", md: "2" }} gap="5">
       <Flex direction="column" gap="5">
         <div>
-          <h1>Teste</h1>
-          <Text>teste</Text>
+          <Button size='3' variant="classic">Achei um pet!</Button>
         </div>
         <div>
-          <h1>Teste</h1>
-          <Text>teste</Text>
         </div>
       </Flex>
     </Grid>

@@ -1,5 +1,6 @@
 "use client";
 
+import { SignOut } from "@phosphor-icons/react";
 import {
   Avatar,
   Box,
@@ -36,7 +37,7 @@ const AuthStatus = () => {
       <DropdownMenu.Root>
         <DropdownMenu.Trigger>
           <Avatar
-            src={""}
+            src={"https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=Buddy"}
             fallback="?"
             size="4"
             radius="full"
@@ -44,13 +45,11 @@ const AuthStatus = () => {
             referrerPolicy="no-referrer"
           />
         </DropdownMenu.Trigger>
-        <DropdownMenu.Content>
-          <DropdownMenu.Label>
-            <Text>Marcos</Text>
-          </DropdownMenu.Label>
-          <DropdownMenu.Item>
-            <Link href="/api/auth/signout">Logout</Link>
-          </DropdownMenu.Item>
+        <DropdownMenu.Content variant="soft" color="indigo" align="center">
+          <DropdownMenu.Item>Meu abrigo</DropdownMenu.Item>
+          <DropdownMenu.Item>Duplicate</DropdownMenu.Item>
+          <DropdownMenu.Separator />
+          <DropdownMenu.Item>Logout <SignOut size={18}/></DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Root>
     </Box>
